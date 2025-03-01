@@ -5,78 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
     <header>
         <h1>Bigyan Thapa</h1>
         <p>Tech Enthusiast</p>
+        <!-- Update profile image and marquee text -->
+        <!-- <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-img">
         <div class="marquee">
             <span>Building Amazing Android Apps</span>
             <span>Expert in Native Android Development</span>
             <span>Passionate About Clean Code</span>
     
-        </div>
+        </div> -->
     </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate and results-driven developer with expertise in building and deploying robust and scalable android applications. I am proficient in Java and Kotlin, with a strong focus on architectural design, performance optimization, and creating maintainable codebases.</p>
+      </section>
 
     <section id="summary">
         <h2>Summary</h2>
-        <p>Transforming complex ideas into polished, high-performing Android apps is what I do. For almost a decade, I've been leveraging the latest technologies and design principles to deliver exceptional user experiences that drive results. Explore my portfolio to see how I've helped businesses achieve their goals through innovative Android solutions.</p>
+        <p>Transforming complex ideas into polished, high-performing Android apps is what I do. For almost a decade, I've been leveraging the latest technologies and design principles to deliver exceptional user experiences that drive results. Explore my portfolio to see how I've helped businesses achieve their goals through innovative Android solutions, collaborating with cross-functional teams.</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Accessibility Testing</li>
-            <li>Code Review</li>
-            <li>Kotlin</li>
-            <li>Java</li>
-            <li>Android Development</li>
-            <li>Dagger</li>
-            <li>Coroutines</li>
-            <li>Git</li>
-            <li>Android BLE</li>
-            <li>Android Architecture Components</li>
-            <li>Android Jetpack</li>
-            <li>Android Studio</li>
-            <li>RESTful Web Services</li>
-            <li>Material Design</li>
-            <li>Unit Testing</li>
-            <li>UI Testing</li>
-            <li>CI/CD</li>
-            <li>Agile Development</li>
-            <li>Scrum</li>
-            <li>Pair Programming</li>
-            <li>Design Patterns</li>
-            </ul>
-            </section>
+        <div class="skills-grid">
+          <div class="skill-card">Accessibility Testing</div>
+          <div class="skill-card">Code Review</div>
+          <div class="skill-card">Kotlin</div>
+          <div class="skill-card">Java</div>
+          <div class="skill-card">Android Development</div>
+          <div class="skill-card">Dagger</div>
+          <div class="skill-card">Coroutines</div>
+          <div class="skill-card">Git</div>
+          <div class="skill-card">Android BLE</div>
+          <div class="skill-card">Android Architecture Components</div>
+          <div class="skill-card">Android Jetpack</div>
+          <div class="skill-card">Android Studio</div>
+          <div class="skill-card">RESTful Web Services</div>
+          <div class="skill-card">Material Design</div>
+          <div class="skill-card">Unit Testing</div>
+          <div class="skill-card">UI Testing</div>
+          <div class="skill-card">CI/CD</div>
+          <div class="skill-card">Agile Development</div>
+          <div class="skill-card">Scrum</div>
+          <div class="skill-card">Pair Programming</div>
+          <div class="skill-card">Design Patterns</div>
+        </div>
+      </section>
 
-    <section id="experience">
+      <section id="experience" class="experience">
         <h2>Experience</h2>
-        <div class="experience-item">
+        <div class="experience-grid">
+          <div class="experience-card">
             <h3>Senior Software Engineer</h3>
-            <p>PayPal - Sep 2022 - Present</p>
-            <p>Successfully translated complex business requirements into actionable tasks for the Android team, contributing to the development of innovative products. Leveraged the latest Android technologies to design, prototype, and implement high-quality solutions that enhance user experience. Prioritized quality and performance in all development efforts, ensuring the delivery of reliable and efficient applications. Mentored and developed junior engineers, fostering a collaborative and high-performing team environment. Collaborated effectively with product managers, designers, and other stakeholders to ensure alignment with business goals.</p>
-            </div>
-        <div class="experience-item">
+            <p class="company">PayPal - Sep 2022 - Present</p>
+            <p class="description">Successfully translated complex business requirements into actionable tasks for the Android team, contributing to the development of innovative products. Leveraged the latest Android technologies to design, prototype, and implement high-quality solutions that enhance user experience. Prioritized quality and performance in all development efforts, ensuring the delivery of reliable and efficient applications. Mentored and developed junior engineers, fostering a collaborative and high-performing team environment. Collaborated effectively with product managers, designers, and other stakeholders to ensure alignment with business goals.</p>
+          </div>
+          <div class="experience-card">
             <h3>Senior Software Engineer, Mobile</h3>
-            <p>Sprout Social, Inc. - Jun 2021 - Sep 2022</p>
-            <p>Developed and maintained a sophisticated social network management application, using Kotlin for new feature development while also maintaining and migrating legacy Java code with continuous refactoring to enhance code quality and performance. Led efforts to standardize architecture and implementation patterns, successfully reducing reliance on unnecessary third-party libraries. By staying at the forefront of Android application development best practices, I ensure that these advancements are seamlessly integrated into the project, contributing to a modern, efficient, and scalable application.</p>
-        </div>
-        <div class="experience-item">
+            <p class="company">Sprout Social, Inc. - Jun 2021 - Sep 2022</p>
+            <p class="description">Developed and maintained a sophisticated social network management application, using Kotlin for new feature development while also maintaining and migrating legacy Java code with continuous refactoring to enhance code quality and performance. Led efforts to standardize architecture and implementation patterns, successfully reducing reliance on unnecessary third-party libraries. By staying at the forefront of Android application development best practices, I ensure that these advancements are seamlessly integrated into the project, contributing to a modern, efficient, and scalable application.</p>
+          </div>
+          <div class="experience-card">
             <h3>Mobile Engineer</h3>
-            <p>Propeller Health - Jan 2020 - Jun 2021</p>
-            <p>Developed and maintained a critical product that supports the respiratory health of thousands of users with special needs, providing them with a robust, user-friendly, and reliable Android application for health tracking. Primarily using Kotlin for new development while maintaining legacy Java code, I leveraged Android architecture components, REST Web Services, Material Design, Retrofit, Dagger, Google Play Services, Firebase, ViewBinding, and extensive Android unit testing frameworks (JUnit, Robolectric, Kotest, Mockito, Mockk) to build and enhance the application.</p>
-        </div>
-        <div class="experience-item">
+            <p class="company">Propeller Health - Jan 2020 - Jun 2021</p>
+            <p class="description">Developed and maintained a critical product that supports the respiratory health of thousands of users with special needs, providing them with a robust, user-friendly, and reliable Android application for health tracking. Primarily using Kotlin for new development while maintaining legacy Java code, I leveraged Android architecture components, REST Web Services, Material Design, Retrofit, Dagger, Google Play Services, Firebase, ViewBinding, and extensive Android unit testing frameworks (JUnit, Robolectric, Kotest, Mockito, Mockk) to build and enhance the application.</p>
+          </div>
+          <div class="experience-card">
             <h3>Android Developer Consultant</h3>
-            <p>Codeworks, Inc. - Dec 2015 - Jan 2020</p>
-            <p>Worked as a consultant for Milwaukee Tools for a little above 4 years. During this time, I got the opportunity to grow with the team implementing newer technology and making the power tool smart. Milwaukee Tools makes the best power tools smart allowing them to be connected to smart phones. The customers can connect to the Bluetooth enabled tools and customize various settings like torque, rpm etc. to perform specific tasks. Also they can generate reports for hydraulic based tools, tool & unlock tools in case they get lost and track location.</p>
-            <p>As an Android application developer in the team from early on, I got opportunity to grow with the team. I worked closely with product, design and engineering teams to add new features, optimization, continuous integration and deployment of the app and support the new product development pipeline. Bluetooth is the core of the application along with tracking, analytics, inventory management, notifications, tool controls and so on.</p>
+            <p class="company">Codeworks, Inc. - Dec 2015 - Jan 2020</p>
+            <p class="description">Worked as a consultant for Milwaukee Tools for a little above 4 years. During this time, I got the opportunity to grow with the team implementing newer technology and making the power tool smart. Milwaukee Tools makes the best power tools smart allowing them to be connected to smart phones. The customers can connect to the Bluetooth enabled tools and customize various settings like torque, rpm etc. to perform specific tasks. Also they can generate reports for hydraulic based tools, tool & unlock tools in case they get lost and track location.</p>
+            <p class="description">As an Android application developer in the team from early on, I got opportunity to grow with the team. I worked closely with product, design and engineering teams to add new features, optimization, continuous integration and deployment of the app and support the new product development pipeline. Bluetooth is the core of the application along with tracking, analytics, inventory management, notifications, tool controls and so on.</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <footer>
-        <p>© 2023 Bigyan Thapa</p>
-    </footer>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2023 Bigyan Thapa. All rights reserved. | <a href="https://github.com/bigyanthapa">GitHub</a> | <a href="https://www.linkedin.com/in/bigyanthapa/">LinkedIn</a> | <a href="https://x.com/bigyan4424">Twitter</a></p>
+      </footer>
+</div>
 </body>
 </html>
